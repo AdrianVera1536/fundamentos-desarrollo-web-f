@@ -180,7 +180,7 @@ header{
 }
 
 .card-hover-footer i{
-    background-color: white;
+    background-color: rgb(199, 185, 185);
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
