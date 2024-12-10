@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(255, 238, 0);
+    background-color: rgb(245, 229, 3);
 }
 
 .card{
@@ -21,7 +21,7 @@ body{
 }
 
 .card span{
-    background-color: rgb(255, 238, 0);
+    background-color: rgb(245, 229, 3);
     padding: 5px 10px;
     border-radius: 4px;
 }
