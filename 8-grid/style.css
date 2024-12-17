@@ -1,50 +1,57 @@
-*{
+/* Estilos Generales */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-/* Padre */
-.container{
+
+body {
+    background-color: #000; /* Fondo negro */
+    color: #FFF; /* Texto blanco */
+}
+
+/* Contenedor */
+.container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(4, 1fr); */
-    gap: 10px;
-
-    width: 600px;
-    height: 600px;
-    background-color: blueviolet;
-    border: 3px solid black;
-    margin: 40px auto;
-    padding: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Hijo */
-.ball{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 100px;
-    height: 100px; */
-    background-color: orange;
+/* Estilo de cada piloto */
+.pilot {
+    background-color: #1E1E1E; /* Fondo oscuro */
+    border: 2px solid #E10600; /* Borde rojo F1 */
+    color: #FFF;
+    padding: 15px;
+    text-align: center;
     border-radius: 10px;
-    border: 3px solid black;
-    color: white;
+    transition: transform 0.3s ease;
 }
 
-.tomato{
-    background-color: tomato;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.pilot:hover {
+    transform: scale(1.05);
+    background-color: #E10600;
+    color: #FFF;
 }
-.celeste{
-    background-color: aquamarine;
-    color: black;
-    /* grid-column-start: 4;
-    grid-column-end: 5; */
-    grid-column: 4/5;
-    /* grid-row-start: 2;
-    grid-row-end: 4; */
-    grid-row: 2/4;
+
+/* Botones */
+.pilot button {
+    background-color: #E10600; /* Rojo */
+    color: #FFF;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.pilot button:hover {
+    background-color: #FFD700; /* Amarillo F1 */
+    color: #000;
 }

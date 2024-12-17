@@ -3,35 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Red Bull Racing</title>
+    <style>
+        
+      /* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #002147; /* Azul oscuro */
+    color: #f4f4f4; /* Blanco */
+    font-family: 'Poppins', Arial, sans-serif; /* Fuente estilizada */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Título principal */
+h2 {
+    color: #e10600; /* Rojo */
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #1e1e1e; /* Negro carbón */
+    padding: 15px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    color: #ffd700; /* Amarillo */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1rem;
+}
+
+li a:hover {
+    background-color: #e10600; /* Rojo */
+    color: #fff; /* Blanco */
+    border: 2px solid #ffd700;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Sección de pilotos */
+.pilots-section {
+    text-align: center;
+    margin: 50px 10px;
+}
+
+.pilots-section img {
+    max-width: 30%; /* Ajuste más pequeño para elegancia */
+    height: auto;
+    border: 5px solid #e10600; /* Borde rojo */
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.pilots-section img:hover {
+    transform: scale(1.1); /* Efecto más dinámico */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+.pilots-section p {
+    color: #ffd700; /* Amarillo */
+    font-size: 1.3rem;
+    margin-top: 15px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
 </head>
 <body>
     
-    <h2>Navega por las clases ccs 😊</h2>
+    <h2>BIENVENIDO A RED BULL RACING</h2>
     <header>
         <nav>
             <ul>
                 <li>
-                    <a href="./1-intro-css/">Intro ccs</a>
+                    <a href="./1-Intro RB/">Intro RB</a>
                 </li>
                 <li>
-                    <a href="./2-box-model/">Box Model</a>
+                    <a href="./2-box-model/">Box Model RB</a>
                 </li>
                 <li>
-                    <a href="./3-herencia/">Herencia</a>
+                    <a href="./3-herencia/">Herencia RB</a>
                 </li>
                 <li>
-                    <a href="./4-flexbox/">Flexbox</a>
+                    <a href="./4-flexbox/">Flexbox RB</a>
                 </li>
                 <li>
-                    <a href="./5-metrika/">Metrika</a>
+                    <a href="./5-metrika/">Metrika RB</a>
                 </li>
                 <li>
-                    <a href="./6-portfolio/">Portfolio</a>
+                    <a href="./6-portafolio/">Portafolio RB</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <!-- Sección de los pilotos -->
+    <section class="pilots-section">
+        <img src="./1-Intro RB/asstes/20240327_103803-scaled-1160x700.jpg" alt="Pilotos de Red Bull Racing">
+        <p>Max Verstappen y Sergio Pérez: Los pilotos estrella de Red Bull Racing en la Fórmula 1.</p>
+    </section>
 
 </body>
 </html>
